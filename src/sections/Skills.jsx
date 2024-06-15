@@ -2,6 +2,7 @@ import Container from "@components/Container";
 import Techstack from "@components/Techstack";
 import { Header } from "@components/Typography";
 import styled from "styled-components";
+import { frontend, backend, databases, others } from "@utils/tech";
 
 const SkillContainer = styled.div`
   width: 100%;
@@ -9,6 +10,24 @@ const SkillContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2em;
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
+
+const Flex = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-self: center;
+  gap: 1rem;
+  border: 1px solid crimson;
+  img {
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const Skills = () => {
@@ -16,39 +35,26 @@ const Skills = () => {
     <Container id="skills">
       <Header>Skills</Header>
       <SkillContainer>
-        <Techstack>
-          <h3>Frontend</h3>
-          <ul>
-            <li>HTML, CSS, JS</li>
-            <li>React</li>
-            <li>Next</li>
-          </ul>
-        </Techstack>
-        <Techstack>
-          <h3>Backend</h3>
-          <ul>
-            <li>Node</li>
-            <li>Expressjs</li>
-            <li>Hapijs</li>
-          </ul>
-        </Techstack>
-        <Techstack>
-          <h3>Database</h3>
-          <ul>
-            <li>Mysql</li>
-            <li>Postgresql</li>
-            <li>Mongodb</li>
-            <li>Redis</li>
-          </ul>
-        </Techstack>
-        <Techstack>
-          <h3>Others</h3>
-          <ul>
-            <li>Git/Github</li>
-            <li>RESTAPI</li>
-            <li>Docker</li>
-          </ul>
-        </Techstack>
+        <Flex>
+          {frontend.map((icon, i) => (
+            <img key={i} src={icon.src} alt={icon.name} />
+          ))}
+        </Flex>
+        <Flex>
+          {backend.map((icon, i) => (
+            <img key={i} src={icon.src} alt={icon.name} />
+          ))}
+        </Flex>
+        <Flex>
+          {databases.map((icon, i) => (
+            <img key={i} src={icon.src} alt={icon.name} />
+          ))}
+        </Flex>
+        <Flex>
+          {others.map((icon, i) => (
+            <img key={i} src={icon.src} alt={icon.name} />
+          ))}
+        </Flex>
       </SkillContainer>
     </Container>
   );
