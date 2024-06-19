@@ -14,7 +14,7 @@ body {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-size: 21px;
-    background-color: ${(props) => props.theme.background};
+    background-color: ${(props) => props.theme.base};
     color: ${(props) => props.theme.secondary};
 }
 `;

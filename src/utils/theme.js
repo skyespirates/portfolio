@@ -1,5 +1,8 @@
 export default {
-  background: "#111",
-  primary: "#38A1FF",
-  secondary: "#707070",
+  base: "#0B1120",
+  surface: "#0F172A",
+  float: "#1E293B",
+  header: "#F8FAFC",
+  primary: "#1E90FF",
+  secondary: "#808EA3",
 };
