@@ -5,25 +5,21 @@ import styled from "styled-components";
 import { frontend, backend, databases, others } from "@utils/tech";
 
 const SkillContainer = styled.div`
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
   height: fit-content;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2em;
-  @media (max-width: 1080px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (max-width: 1080px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  justify-items: center;
 `;
 
 const Flex = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-self: center;
   gap: 1rem;
-  border: 1px solid crimson;
+  background-color: ${(props) => props.theme.surface};
+  padding: 1em;
   img {
     width: 80px;
     height: 80px;

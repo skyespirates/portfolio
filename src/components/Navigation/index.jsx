@@ -30,7 +30,7 @@ const Link = styled.li`
   }
   a {
     text-decoration: none;
-    color: #fff;
+    color: ${(props) => props.theme.secondary};
   }
 `;
 
@@ -38,7 +38,7 @@ const Navigation = () => {
   return (
     <Nav>
       <Logo>
-        &lt;<span>Aziz</span> /&gt;
+        &lt;<span>Aziz</span>/&gt;
       </Logo>
       <Links>
         <Link>
@@ -52,9 +52,6 @@ const Navigation = () => {
         </Link>
         <Link>
           <a href="#experience">Experience</a>
-        </Link>
-        <Link>
-          <a href="#projects">Projects</a>
         </Link>
       </Links>
     </Nav>
