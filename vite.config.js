@@ -12,4 +12,7 @@ export default defineConfig({
       "@icons": path.resolve("src", "assets", "icons"),
     },
   },
+  build: {
+    outDir: "build",
+  },
 });
