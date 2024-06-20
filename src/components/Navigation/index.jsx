@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 const Nav = styled.nav`
@@ -7,7 +8,10 @@ const Nav = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0 3em;
+  padding: 0 12rem;
+  z-index: 99;
+  background-color: ${(props) => (props.color ? props.theme.float : "")};
+  transition: background-color 0.5s ease;
 `;
 const Logo = styled.div`
   font-size: 48px;
@@ -35,8 +39,17 @@ const Link = styled.li`
 `;
 
 const Navigation = () => {
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY > 72) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
   return (
-    <Nav>
+    <Nav color={color}>
       <Logo>
         &lt;<span>Aziz</span>/&gt;
       </Logo>

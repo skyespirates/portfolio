@@ -5,8 +5,6 @@ import Container from "@components/Container";
 import styled from "styled-components";
 const Introduction = styled.div`
   min-height: 100dvh;
-  max-width: 60%;
-  margin: 0 auto;
   padding: 12rem 0;
   .primary {
     color: ${(props) => props.theme.primary};

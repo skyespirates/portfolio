@@ -26,34 +26,24 @@ const Image = styled.img`
   }
 `;
 
-const Border = styled.div`
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  border: 2px solid crimson;
-  left: 1em;
-  top: 1em;
-  z-index: -99;
-`;
-
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 360px;
-  max-width: 60%;
-  margin: 0 auto;
   gap: 2em;
 `;
-const Div = styled.div``;
+const Div = styled.div`
+  padding: 0 6rem;
+`;
 
 const Summary = () => {
   return (
     <Container id="summary">
+      <ScrollAnimation animateIn="fadeIn">
+        <Header primary>Summary</Header>
+      </ScrollAnimation>
       <Grid>
         <Div>
-          <ScrollAnimation animateIn="fadeIn">
-            <Header>Summary</Header>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation animateIn="fadeIn" animateOnce>
             <p>
               Skilled and versatile Full Stack Developer with 3 years of
               experience in designing, developing, and maintaining web
@@ -67,10 +57,12 @@ const Summary = () => {
           </ScrollAnimation>
         </Div>
         <Illustration>
-          <Wrapper>
-            <Image src={Dev} alt="dev" />
-            {/* <Border /> */}
-          </Wrapper>
+          <ScrollAnimation animateIn="fadeIn" animateOnce>
+            <Wrapper>
+              <Image src={Dev} alt="dev" />
+              {/* <Border /> */}
+            </Wrapper>
+          </ScrollAnimation>
         </Illustration>
       </Grid>
     </Container>

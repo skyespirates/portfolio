@@ -11,47 +11,47 @@ import ScrollAnimation from "react-animate-on-scroll";
 const Experience = () => {
   return (
     <Container id="experience">
-      <Header>Experience</Header>
+      <Header primary>Experience</Header>
       <ScrollAnimation animateOnce animateIn="fadeIn">
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            contentStyle={{ background: "#1E90FF", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #1E90FF" }}
             date="2024 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={{ background: "#1E90FF", color: "#fff" }}
             icon={<BiSolidBriefcase />}
           >
             <h3 className="vertical-timeline-element-title">
               Fullstack Developer
             </h3>
-            <h7 className="vertical-timeline-element-subtitle">
+            <h6 className="vertical-timeline-element-subtitle">
               Dans Multi Pro
-            </h7>
+            </h6>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2023 - 2024"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={{ background: "#1E90FF", color: "#fff" }}
             icon={<BiSolidBriefcase />}
           >
             <h3 className="vertical-timeline-element-title">
               Software Engineer
             </h3>
-            <h7 className="vertical-timeline-element-subtitle">DMS Software</h7>
+            <h6 className="vertical-timeline-element-subtitle">DMS Software</h6>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2018 - 2022"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={{ background: "#1E90FF", color: "#fff" }}
             icon={<BiSolidGraduation />}
           >
             <h3 className="vertical-timeline-element-title">
               Bachelor of Computer Science
             </h3>
-            <h7 className="vertical-timeline-element-subtitle">
+            <h6 className="vertical-timeline-element-subtitle">
               Institut Pertanian Bogor (IPB University)
-            </h7>
+            </h6>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </ScrollAnimation>
