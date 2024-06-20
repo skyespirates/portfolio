@@ -8,10 +8,14 @@ import Summary from "@sections/Summary";
 import styled from "styled-components";
 import GlobalStyle from "./utils/global";
 
-const Container = styled.div``;
+const Container = styled.div`
+  position: relative;
+`;
 
 const MainWrapper = styled.div`
-  padding: 2em 8em;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 2em 0;
 `;
 
 const App = () => {
