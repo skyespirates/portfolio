@@ -9,7 +9,7 @@ import styled from "styled-components";
 import GlobalStyle from "./utils/global";
 
 import option from "@utils/particles.json";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 

@@ -1,5 +1,4 @@
-import Container from "@components/Container";
-import { Header } from "@components/Typography";
+import { Container, Header } from "@components";
 import {
   VerticalTimeline,
   VerticalTimelineElement,

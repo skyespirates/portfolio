@@ -1,38 +1,8 @@
-import Container from "@components/Container";
-import { Header } from "@components/Typography";
-import styled from "styled-components";
 import { frontend, backend, databases, others } from "@utils/tech";
 import { Fragment } from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import ScrollAnimation from "react-animate-on-scroll";
-
-const SkillContainer = styled.div`
-  height: fit-content;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
-  justify-items: center;
-`;
-
-const Flex = styled.div`
-  border-radius: 1em;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  background-color: ${(props) => props.theme.surface};
-  padding: 1em;
-  height: 100%;
-  img {
-    width: 80px;
-    height: 80px;
-    filter: grayscale(1);
-    transition: transform 0.3s ease-in-out;
-    &:hover {
-      filter: grayscale(0);
-      transform: scale(1.1);
-    }
-  }
-`;
+import { Container, Header, SkillContainer, Flex } from "@components";
 
 const Skills = () => {
   return (

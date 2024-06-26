@@ -1,39 +1,14 @@
-import Container from "@components/Container";
-import Illustration from "@components/Illustration";
-// import { Wrapper } from "@components/Wrapper";
-
+import {
+  Container,
+  Header,
+  Illustration,
+  Grid,
+  Div,
+  Wrapper,
+  Image,
+} from "@components";
 import Dev from "../assets/pics.jpg";
-import { Header } from "@components/Typography";
-
-import styled from "styled-components";
-
 import ScrollAnimation from "react-animate-on-scroll";
-
-const Wrapper = styled.div`
-  position: relative;
-  height: 360px;
-`;
-
-const Image = styled.img`
-  filter: grayscale(1);
-  width: 360px;
-  height: 360px;
-  border-radius: 1em;
-  transition: transform 0.5s ease;
-  &:hover {
-    filter: grayscale(0);
-    transform: scale(1.05);
-  }
-`;
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 2em;
-`;
-const Div = styled.div`
-  padding: 0 6rem;
-`;
 
 const Summary = () => {
   return (

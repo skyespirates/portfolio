@@ -1,39 +1,4 @@
-// import { Header, Paragraph } from "@components/Typography";
-// import { Wrapper } from "@components/Wrapper";
-import Container from "@components/Container";
-
-import styled from "styled-components";
-const Introduction = styled.div`
-  min-height: 100dvh;
-  padding: 12rem 0;
-  .primary {
-    color: ${(props) => props.theme.primary};
-    font-family: "Pridi", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  h1 {
-    font-size: 2.8em;
-    line-height: 2em;
-    color: ${(props) => props.theme.header};
-  }
-  button {
-    padding: 8px 16px;
-    border: 1px solid ${(props) => props.theme.primary};
-    background-color: transparent;
-    border-radius: 5px;
-    font-family: "Pridi", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    color: ${(props) => props.theme.primary};
-    margin-top: 2em;
-    cursor: pointer;
-    &:hover {
-      background-color: ${(props) => props.theme.surface};
-    }
-  }
-`;
+import { Container, Introduction } from "@components";
 
 const Intro = () => {
   return (
