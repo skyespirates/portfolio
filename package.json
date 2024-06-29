@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.0.0",
   "homepage": "https://skyespirates.github.io/portfolio",
+  "description": "my personal porfolio",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
