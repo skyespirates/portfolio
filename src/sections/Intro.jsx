@@ -1,4 +1,4 @@
-import { Container, Introduction } from "@components";
+import { Container, Introduction } from '@components';
 
 const Intro = () => {
   return (
@@ -12,7 +12,7 @@ const Intro = () => {
           back-end functionality.
         </p>
         <p>I enjoy learning new skills and implementing them in real life!</p>
-      <p>Right now I&apos;m learning about Docker and some L3 stuff </p>
+        <p>Right now I&apos;m learning Golang and some DevOps stuff</p>
         <button>Resume</button>
       </Introduction>
     </Container>
