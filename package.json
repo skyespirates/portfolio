@@ -1,12 +1,14 @@
 {
   "name": "portfolio",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "homepage": "https://skyespirates.github.io/portfolio",
+  "description": "my personal porfolio",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "dev": "vite",
+    "dev-expose": "vite --host",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

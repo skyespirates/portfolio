@@ -13,7 +13,7 @@ const Navigation = () => {
   return (
     <Nav color={color}>
       <Logo>
-        &lt;<span>Aziz</span>/&gt;
+        &lt;<span>Skyes</span>/&gt;
       </Logo>
       <Links>
         <Link>
